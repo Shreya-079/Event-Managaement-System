@@ -1,0 +1,100 @@
+/* General Body and Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #1a2a46;
+    letter-spacing: 0.5px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3478c2;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a2a46;
+}
+
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-body h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a2a46;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.card a {
+    color: #4a90e2;
+}
+
+/* Settings Card Specific */
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card .text-white {
+    color: #1a2a46 !important;
+}
+
+.card .text-white:hover {
+    color: #3478c2 !important;
+}

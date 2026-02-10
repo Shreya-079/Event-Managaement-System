@@ -1,0 +1,134 @@
+/* General Body and Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9f5ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #1a2a46;
+    letter-spacing: 0.5px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3478c2;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a2a46;
+}
+
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #3478c2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    color: #555;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Container */
+.table-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f0f2f5;
+    color: #1a2a46;
+    border-bottom: 2px solid #e0e4eb;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table tbody td {
+    border-top: 1px solid #e0e4eb;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Inline form in table */
+.table td form.d-inline {
+    display: flex !important;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.table td .form-control {
+    flex-grow: 1;
+}
+
+.w-auto {
+    width: auto !important;
+}
