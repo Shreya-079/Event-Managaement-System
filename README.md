@@ -41,5 +41,3 @@ The primary objective of this project is to apply foundational web development s
 
 ## 📄 License
 This project is created for academic and learning purposes.
-
-This project is created for academic and learning purposes.
