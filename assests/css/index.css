@@ -1,0 +1,203 @@
+/* EventSphere UI/UX Enhancements */
+
+/* --- General Body and Typography --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fd;
+    color: #383838;
+    line-height: 1.8;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #3478c2;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #4a90e2; /* Blue */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #4a90e2;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #4a90e2;
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-primary {
+    background-color: #4a90e2; /* Blue */
+    color: #fff;
+    border: 2px solid #4a90e2; /* Blue */
+}
+
+.btn-primary:hover {
+    background-color: #3478c2; /* Darker Blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-success {
+    background-color: transparent;
+    color: #4a90e2; /* Blue */
+    border: 2px solid #4a90e2; /* Blue */
+}
+
+.btn-success:hover {
+    background-color: #eef5ff; /* Light Blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1543888746-b6058866e4a2?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- Why Choose Us Section --- */
+.container {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    color: #2c3e50;
+}
+
+.lead.text-muted {
+    font-size: 1.25rem;
+    color: #666 !important;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card h5 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 1.05rem;
+    color: #666;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.8rem 1rem;
+    }
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    .btn-primary, .btn-success {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
