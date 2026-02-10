@@ -1,0 +1,99 @@
+/* General body and typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #1a2a46;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a90e2;
+}
+
+/* Button styles */
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: #fff;
+    border: 2px solid #4a90e2;
+}
+
+.btn-primary:hover {
+    background-color: #3478c2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #4a90e2;
+    border: 2px solid #4a90e2;
+}
+
+.btn-secondary:hover {
+    background-color: #e9f5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List group as cards */
+.list-group {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.list-group-item {
+    border: none;
+    padding: 1.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #f7f9fc;
+}
